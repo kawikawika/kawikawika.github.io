@@ -1,1 +1,19 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Text Box and Button Example</title>
+    <script>
+      function showAlert() {
+        var textBoxValue = document.getElementById("textBox").value;
+        alert("You entered: " + textBoxValue);
+      }
+    </script>
+  </head>
+  <body>
+    <label for="textBox">Enter some text:</label>
+    <input type="text" id="textBox" name="textBox"><br><br>
+    <button onclick="showAlert()">Submit</button>
+  </body>
+</html>
+
